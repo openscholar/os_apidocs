@@ -1,74 +1,15 @@
 {
-  "name": "apidoc",
-  "version": "0.13.1",
-  "description": "RESTful web API Documentation Generator",
-  "author": "Peter Rottmann <rottmann@inveris.de>",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/apidoc/apidoc/blob/master/LICENSE"
-  },
-  "preferGlobal": true,
-  "bin": "bin/apidoc",
-  "main": "./lib/index.js",
-  "homepage": "http://apidocjs.com",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/apidoc/apidoc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/apidoc/apidoc/issues"
+  "name": "jquery-plugin",
+  "version": "0.0.0-ignored",
+  "engines": {
+    "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "npm run jshint && mocha test/",
-    "jshint": "jshint lib/ test/",
-    "build-example": "bin/apidoc -i example/ -o tmp/",
-    "check-updates": "npm-check-updates"
-  },
-  "keywords": [
-    "api",
-    "apidoc",
-    "doc",
-    "documentation",
-    "rest",
-    "restful"
-  ],
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "dependencies": {
-    "apidoc-core": "~0.4.0",
-    "fs-extra": "~0.18.2",
-    "lodash": "~3.8.0",
-    "markdown-it": "^4.2.1",
-    "nomnom": "~1.8.1",
-    "winston": "~1.0.0"
+    "test": "grunt qunit"
   },
   "devDependencies": {
-    "apidoc-example": "*",
-    "jshint": "^2.7.0",
-    "mocha": "~2.2.4",
-    "npm-check-updates": "^1.5.1",
-    "path-to-regexp": "^1.0.3",
-    "semver": "^4.3.4",
-    "should": "~6.0.1"
-  },
-  "jshintConfig": {
-    "camelcase": true,
-    "curly": false,
-    "eqeqeq": true,
-    "forin": true,
-    "latedef": false,
-    "newcap": true,
-    "undef": true,
-    "unused": true,
-    "trailing": true,
-    "node": true,
-    "browser": true,
-    "predef": [
-      "it",
-      "describe",
-      "before",
-      "after"
-    ]
+    "grunt": "~0.4.5",
+    "grunt-apidoc": "^0.10.1",
+    "grunt-contrib-watch": "~0.4.0"
   }
 }
