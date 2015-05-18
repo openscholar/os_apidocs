@@ -1,7 +1,88 @@
 define({ "api": [
   {
+    "type": "get",
+    "url": "api/login-token",
+    "title": "Access Token",
+    "version": "0.1.0",
+    "name": "Access_token",
+    "group": "Basic",
+    "description": "<p>Access token uses us for request which done outside the Drupal installation. A good example will be a mobile application try to access content which not accessible to anonymous users. Since the request is done outside the Drupal installation we need a way to verify which user involve in the request.</p> <p>In the example you can see how a request to get the access token is done using Angular JS. Once the request succeeded you will get back a JSON with three important parameters:</p> <ul> <li><code>access_token</code> will keep the access token that you can use in order to make a successful rest request.</li> <li><code>expires_in</code> define for how many times the access token is valid. Usually for one day.</li> <li><code>refresh_token</code> will used you to get a new access token once the previous has expired.</li> </ul> ",
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "$http.get(backend + 'login-token', {\n  headers: {'Authorization': 'Basic ' + Base64.encode($scope.user.name + ':' + $scope.user.pass)}\n}).success(function(data) {\n  localStorageService.set('access_token', data.access_token);\n});",
+        "type": "js"
+      }
+    ],
+    "header": {
+      "examples": [
+        {
+          "title": "Header example:",
+          "content": "{\n  \"Authorization\": \"Basic YWRtaW46YWRtaW4=\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success response:",
+          "content": "{\n  access_token: \"Y3wQua-qFY-mukslgPaLqKdNmlGdBQK4dly-UhlJcYk\",\n  type: \"Bearer\",\n  expires_in: 86400,\n  refresh_token: \"xRP-nnKA05GGsN-jr80Z_hfPHqrkpyjAtevDSeTLbYU\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Failed response:",
+          "content": "{\n  type: \"http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2\",\n  title: \"Bad credentials\",\n  status: 401,\n  detail: \"Unauthorized.\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/documentation/doc.class.php",
+    "groupTitle": "Basic"
+  },
+  {
+    "type": "get",
+    "url": "api/session/token",
+    "title": "X CSRF token",
+    "version": "0.1.0",
+    "name": "Basic",
+    "group": "Basic",
+    "description": "<p>When running a REST request inside a Drupal installation RESTful will validate you need to pass an X-CSRF-TOKEN as a header for each request. This will make sure that the user of the cookie was not hijacked.</p> ",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n  \"X-CSRF-Token\": \"pgaSEyNaDELTBuPXy-Jpx_6I-mrEruxH3_-BEcMtnU0\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/documentation/doc.class.php",
+    "groupTitle": "Basic"
+  },
+  {
+    "type": "get",
+    "url": "api/",
+    "title": "End points",
+    "version": "0.1.0",
+    "name": "End_points",
+    "group": "Basic",
+    "description": "<p>One of RESTful good features is the API discovery.</p> ",
+    "sampleRequest": [
+      {
+        "url": "api/"
+      }
+    ],
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/documentation/doc.class.php",
+    "groupTitle": "Basic"
+  },
+  {
     "type": "delete",
-    "url": "/biblio/:id",
+    "url": "api/biblio/:id",
     "title": "Delete",
     "version": "0.1.0",
     "name": "Delete",
@@ -73,7 +154,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/biblio/:id",
+    "url": "api/biblio/:id",
     "title": "Get",
     "version": "0.1.0",
     "name": "Get",
@@ -141,16 +222,11 @@ define({ "api": [
       }
     },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/biblio/1.0/BiblioNodeRestfulBase.class.php",
-    "groupTitle": "Publication",
-    "sampleRequest": [
-      {
-        "url": "http://localhost/OpenScholarMake/www/api/biblio/:id"
-      }
-    ]
+    "groupTitle": "Publication"
   },
   {
     "type": "patch",
-    "url": "/biblio/:id",
+    "url": "api/biblio/:id",
     "title": "Patch",
     "version": "0.1.0",
     "name": "Patch",
@@ -222,7 +298,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/biblio",
+    "url": "api/biblio",
     "title": "Post",
     "version": "0.1.0",
     "name": "Post",
