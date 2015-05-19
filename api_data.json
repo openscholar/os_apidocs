@@ -74,7 +74,7 @@
     "description": "<p>One of RESTful good features is the API discovery.</p> ",
     "sampleRequest": [
       {
-        "url": "api/"
+        "url": "http://localhost/OpenScholarMake/www/api/"
       }
     ],
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/documentation/doc.class.php",
@@ -82,12 +82,36 @@
   },
   {
     "type": "delete",
-    "url": "api/biblio/:id",
+    "url": "api/bio/:id",
     "title": "Delete",
     "version": "0.1.0",
     "name": "Delete",
-    "group": "Publication",
-    "description": "<p>Create a Publication entry.</p> ",
+    "group": "Biography",
+    "description": "<p>Create a Biography entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/bio/1.0/BioNodeRestfulBase.class.php",
+    "groupTitle": "Biography"
+  },
+  {
+    "type": "get",
+    "url": "api/bio/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Biography",
+    "description": "<p>Consume publications content.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -111,6 +135,118 @@
             "field": "id",
             "description": "<p>The publication ID.</p> "
           },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/bio/1.0/BioNodeRestfulBase.class.php",
+    "groupTitle": "Biography",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/bio/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/bio/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Biography",
+    "description": "<p>Create a Biography entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
           {
             "group": "Success 200",
             "type": "<p>String</p> ",
@@ -145,6 +281,95 @@
             "optional": false,
             "field": "type",
             "description": "<p>The publication type ID.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/bio/1.0/BioNodeRestfulBase.class.php",
+    "groupTitle": "Biography"
+  },
+  {
+    "type": "post",
+    "url": "api/bio",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Biography",
+    "description": "<p>Create a Biography entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>List of file IDs.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The publication type ID.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/bio/1.0/BioNodeRestfulBase.class.php",
+    "groupTitle": "Biography"
+  },
+  {
+    "type": "delete",
+    "url": "api/biblio/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Publication",
+    "description": "<p>Create a Publication entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
           }
         ]
       }
@@ -199,6 +424,20 @@
           },
           {
             "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
             "type": "<p>string</p> ",
             "optional": false,
             "field": "body",
@@ -206,10 +445,38 @@
           },
           {
             "group": "Success 200",
-            "type": "<p>Object[]</p> ",
+            "type": "<p>Integer</p> ",
             "optional": false,
-            "field": "files",
-            "description": "<p>The attached files.</p> "
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
           },
           {
             "group": "Success 200",
@@ -222,7 +489,12 @@
       }
     },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/biblio/1.0/BiblioNodeRestfulBase.class.php",
-    "groupTitle": "Publication"
+    "groupTitle": "Publication",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/biblio/:id"
+      }
+    ]
   },
   {
     "type": "patch",
@@ -248,13 +520,6 @@
     "success": {
       "fields": {
         "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "<p>Number</p> ",
-            "optional": false,
-            "field": "id",
-            "description": "<p>The publication ID.</p> "
-          },
           {
             "group": "Success 200",
             "type": "<p>String</p> ",
@@ -320,13 +585,6 @@
     "success": {
       "fields": {
         "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "<p>Number</p> ",
-            "optional": false,
-            "field": "id",
-            "description": "<p>The publication ID.</p> "
-          },
           {
             "group": "Success 200",
             "type": "<p>String</p> ",
