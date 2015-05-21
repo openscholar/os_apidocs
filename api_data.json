@@ -1466,6 +1466,208 @@
   },
   {
     "type": "delete",
+    "url": "api/person/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Person",
+    "description": "<p>Create a person entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The person ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/person/1.0/PersonNodeRestfulBase.class.php",
+    "groupTitle": "Person"
+  },
+  {
+    "type": "get",
+    "url": "api/person/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Person",
+    "description": "<p>Consume person content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The person ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/person/1.0/PersonNodeRestfulBase.class.php",
+    "groupTitle": "Person",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/person/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/person/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Person",
+    "description": "<p>Create a person entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The person ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/person/1.0/PersonNodeRestfulBase.class.php",
+    "groupTitle": "Person"
+  },
+  {
+    "type": "post",
+    "url": "api/person",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Person",
+    "description": "<p>Create a person entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The person ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/person/1.0/PersonNodeRestfulBase.class.php",
+    "groupTitle": "Person"
+  },
+  {
+    "type": "delete",
+    "url": "api/presentation/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Presentation",
+    "description": "<p>Create a Presentation entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The presentation ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/presentation/1.0/PresentationNodeRestfulBase.class.php",
+    "groupTitle": "Presentation"
+  },
+  {
+    "type": "get",
+    "url": "api/presentation/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Presentation",
+    "description": "<p>Consume presentation content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The presentation ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/presentation/1.0/PresentationNodeRestfulBase.class.php",
+    "groupTitle": "Presentation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/presentation/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/presentation/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Presentation",
+    "description": "<p>Create a Presentation entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The presentation ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/presentation/1.0/PresentationNodeRestfulBase.class.php",
+    "groupTitle": "Presentation"
+  },
+  {
+    "type": "post",
+    "url": "api/presentation",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Presentation",
+    "description": "<p>Create a Presentation entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The presentation ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/presentation/1.0/PresentationNodeRestfulBase.class.php",
+    "groupTitle": "Presentation"
+  },
+  {
+    "type": "delete",
     "url": "api/biblio/:id",
     "title": "Delete",
     "version": "0.1.0",
@@ -1736,6 +1938,309 @@
     },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/biblio/1.0/BiblioNodeRestfulBase.class.php",
     "groupTitle": "Publication"
+  },
+  {
+    "type": "delete",
+    "url": "api/slideshow_slide/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Slideshow",
+    "description": "<p>Create a Slideshow entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The slideshow ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/slideshow_slide/1.0/SlideshowSlideNodeRestfulBase.class.php",
+    "groupTitle": "Slideshow"
+  },
+  {
+    "type": "get",
+    "url": "api/slideshow_slide/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Slideshow",
+    "description": "<p>Consume slideshow content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The slideshow ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/slideshow_slide/1.0/SlideshowSlideNodeRestfulBase.class.php",
+    "groupTitle": "Slideshow",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/slideshow_slide/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/slideshow_slide/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Slideshow",
+    "description": "<p>Create a Slideshow entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The slideshow ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/slideshow_slide/1.0/SlideshowSlideNodeRestfulBase.class.php",
+    "groupTitle": "Slideshow"
+  },
+  {
+    "type": "post",
+    "url": "api/slideshow_slide",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Slideshow",
+    "description": "<p>Create a Slideshow entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The slideshow ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/slideshow_slide/1.0/SlideshowSlideNodeRestfulBase.class.php",
+    "groupTitle": "Slideshow"
+  },
+  {
+    "type": "delete",
+    "url": "api/software_project/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Software_project",
+    "description": "<p>Create a Software project entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software project ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_project/1.0/SoftwareProjectNodeRestfulBase.class.php",
+    "groupTitle": "Software_project"
+  },
+  {
+    "type": "get",
+    "url": "api/software_project/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Software_project",
+    "description": "<p>Consume software project content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software project ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_project/1.0/SoftwareProjectNodeRestfulBase.class.php",
+    "groupTitle": "Software_project",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/software_project/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/software_project/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Software_project",
+    "description": "<p>Create a Software project entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software project ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_project/1.0/SoftwareProjectNodeRestfulBase.class.php",
+    "groupTitle": "Software_project"
+  },
+  {
+    "type": "post",
+    "url": "api/software_project",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Software_project",
+    "description": "<p>Create a Software project entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software project ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_project/1.0/SoftwareProjectNodeRestfulBase.class.php",
+    "groupTitle": "Software_project"
+  },
+  {
+    "type": "delete",
+    "url": "api/software_release/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Software_release",
+    "description": "<p>Create a Software release entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software release ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_release/1.0/SoftwareReleaseNodeRestful.class.php",
+    "groupTitle": "Software_release"
+  },
+  {
+    "type": "get",
+    "url": "api/software_release/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Software_release",
+    "description": "<p>Consume software release content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software release ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_release/1.0/SoftwareReleaseNodeRestful.class.php",
+    "groupTitle": "Software_release",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/software_release/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/software_release/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Software_release",
+    "description": "<p>Create a Software release entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software release ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_release/1.0/SoftwareReleaseNodeRestful.class.php",
+    "groupTitle": "Software_release"
+  },
+  {
+    "type": "post",
+    "url": "api/software_release",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Software_release",
+    "description": "<p>Create a Software release entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The software release ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/software_release/1.0/SoftwareReleaseNodeRestful.class.php",
+    "groupTitle": "Software_release"
   },
   {
     "type": "delete",
