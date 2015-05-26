@@ -33,6 +33,16 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+    watch: {
+      scripts: {
+        files: ['**/*.js'],
+        tasks: ['generate'],
+        options: {
+          spawn: false
+        }
+      }
+      
     }
   });
 
@@ -40,10 +50,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-apidoc');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
+  grunt.registerTask('serve', ['watch']);
   grunt.registerTask('generate', ['apidoc']);
   grunt.registerTask('deploy', ['gh-pages']);
   grunt.registerTask('default', ['generate', 'connect']);
-
 };
