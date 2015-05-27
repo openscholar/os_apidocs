@@ -9,9 +9,10 @@ module.exports = function(grunt) {
   var config = {
     app: 'doc',
     dist: 'dist',
-    // Make sure this path in apidocs.json is defined for
+    // Make sure this path in local.json is defined for
     // your environment.
-    os_path: grunt.file.readJSON('local.json').path
+    os_path: grunt.file.readJSON('local.json').path,
+    assets: 'assets'
   };
 
   // Project configuration.
@@ -73,6 +74,15 @@ module.exports = function(grunt) {
         ],
         tasks: ['generate']
       }
+    },
+    // Copies files to places other tasks can use
+    copy: {
+      files: {
+        cwd: '<%= config.assets %>',
+        src: '**/*',
+        dest: '<%= config.app %>',
+        expand: true
+      }
     }
   });
 
@@ -82,7 +92,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('generate', ['apidoc']);
-  grunt.registerTask('deploy', ['gh-pages']);
+  
+  grunt.registerTask('deploy', ['copy', 'gh-pages']);
 
   grunt.registerTask('serve', function () {
     grunt.task.run([
