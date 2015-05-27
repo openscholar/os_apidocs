@@ -5,12 +5,11 @@ module.exports = function(grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
-  // Configurable paths
+  // Configurable paths.
   var config = {
     app: 'doc',
     dist: 'dist',
-    // Make sure this path in local.json is defined for
-    // your environment.
+    // Make sure this path in local.json is defined for your environment.
     os_path: grunt.file.readJSON('local.json').path,
     assets: 'assets'
   };
@@ -18,7 +17,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-    // Project settings
+    // Project settings.
     config: config,
 
     // Task configuration.
