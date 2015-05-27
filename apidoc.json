@@ -8,7 +8,6 @@
   "template": {
     "withCompare": true,
     "withGenerator": true
-  },
-  "path": "../OpenScholarMake/openscholar/modules/os/modules/os_restful"
+  }
 }
 

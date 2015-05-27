@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     dist: 'dist',
     // Make sure this path in apidocs.json is defined for
     // your environment.
-    os_path: grunt.file.readJSON('apidoc.json').path
+    os_path: grunt.file.readJSON('local.json').path
   };
 
   // Project configuration.
