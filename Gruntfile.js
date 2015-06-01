@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         src: "<%= config.os_path %>",
         dest: "<%= config.app %>",
         options: {
-          includeFilters: [ ".*\\.class\\.php$" ]
+          includeFilters: [ ".*\\.class\\.php$", ".*\\.class\\.inc$" ]
         }
       }
     },
