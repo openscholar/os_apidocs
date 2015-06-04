@@ -456,6 +456,107 @@
   },
   {
     "type": "delete",
+    "url": "api/book/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Book",
+    "description": "<p>Delete a book entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The book ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
+    "groupTitle": "Book"
+  },
+  {
+    "type": "get",
+    "url": "api/book/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Book",
+    "description": "<p>Consume book content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The book ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
+    "groupTitle": "Book",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/book/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/book/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Book",
+    "description": "<p>Patch a book entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The book ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
+    "groupTitle": "Book"
+  },
+  {
+    "type": "post",
+    "url": "api/book",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Book",
+    "description": "<p>Create a book entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The book ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
+    "groupTitle": "Book"
+  },
+  {
+    "type": "delete",
     "url": "api/cv/:id",
     "title": "Delete",
     "version": "0.1.0",
@@ -1062,6 +1163,449 @@
   },
   {
     "type": "delete",
+    "url": "api/files/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Files",
+    "description": "<p>Delete a file entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The file ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/files/1.0/OsFilesResource.class.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "get",
+    "url": "api/files/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Files",
+    "description": "<p>Consume files.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The file ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>File mame.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "size",
+            "description": "<p>Size in bytes.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "mimetype",
+            "description": "<p>File mimetype.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "url",
+            "description": "<p>The direct URL.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>file type: image, document, audio etc. etc.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>File mame.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "timestamp",
+            "description": "<p>The timestamp when the file copied to the server.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "preview",
+            "description": "<p>The html representation of the file.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object</p> ",
+            "optional": false,
+            "field": "Terms",
+            "description": "<p>Terms attached to the file.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/files/1.0/OsFilesResource.class.php",
+    "groupTitle": "Files",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/files/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/bio/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Files",
+    "description": "<p>Create a Biography entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "file",
+            "description": "<p>The file object. Look on the post documentation.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/files/1.0/OsFilesResource.class.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "post",
+    "url": "api/files",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Files",
+    "description": "<p>Upload a file.</p> <p>Unlike other data we can send via REST request files are a different animal. You can use for example extension such as <a href=\"https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm\">Postman</a> or other tools to send to the file. The most important thing is that the file object will be attached to the file property in the request.</p> <p>Once the request passed, you will get back a result representing the file object in OpenScholar's database. In order to attach files to content you'll need to pass the file ID from the file you uploaded.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "file",
+            "description": "<p>The file object. Look on the post documentation.</p> "
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "{\n \"data\": [\n   {\n     \"id\": \"14\",\n     \"label\": \"picture0010.jpg\",\n     \"self\": \"http://localhost/openscholar/api/v1.0/files/14\",\n     \"size\": \"83830\",\n     \"mimetype\": \"image/png\",\n     \"url\": \"http://localhost/openscholar/sites/default/files/picture0010.jpg\",\n     \"type\": \"image\",\n     \"name\": \"picture0010.jpg\",\n     \"timestamp\": \"83830\",\n     \"description\": null,\n     \"image_alt\": null,\n     \"image_title\": null,\n     \"preview\": \"field_view\",\n     \"terms\": null\n   }\n ],\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "$http.post(backend + 'files', {\n  data: {\n    file: fileObject\n  },\n  headers: {\n    \"X-CSRF-Token\": \"pgaSEyNaDELTBuPXy-Jpx_6I-mrEruxH3_-BEcMtnU0\"\n  }\n});",
+        "type": "json"
+      }
+    ],
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/files/1.0/OsFilesResource.class.php",
+    "groupTitle": "Files"
+  },
+  {
+    "type": "delete",
+    "url": "api/group/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Group",
+    "description": "<p>Delete a group entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The group ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/group/1.0/GroupNodeRestfulBase.class.php",
+    "groupTitle": "Group"
+  },
+  {
+    "type": "get",
+    "url": "api/group",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Group",
+    "group": "Group",
+    "description": "<p>OpenScholar uses Organic Groups in order to have content attached to vsite. Actually, each vsite is a group. This give us the options to override site wide settings(roles and permission).</p> <p>There are 3 types of groups: personal, project and department when personal can have sub-sites.</p> ",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/group"
+      }
+    ],
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The group ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/group/1.0/GroupNodeRestfulBase.class.php",
+    "groupTitle": "Group"
+  },
+  {
+    "type": "patch",
+    "url": "api/group/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Group",
+    "description": "<p>Update a group entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The group ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/group/1.0/GroupNodeRestfulBase.class.php",
+    "groupTitle": "Group"
+  },
+  {
+    "type": "post",
+    "url": "api/group",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Group",
+    "description": "<p>Create a group entry.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The group ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/group/1.0/GroupNodeRestfulBase.class.php",
+    "groupTitle": "Group"
+  },
+  {
+    "type": "patch",
+    "url": "api/layout",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Layout",
+    "description": "<p>Update a layout in a vsite.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The identifier of the layout object.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>vsite ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>Identifier of the layout object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Array</p> ",
+            "optional": false,
+            "field": "blocks",
+            "description": "<p>Array of blocks.</p> "
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "vsite: 2,\nobject_id: os_pages-page-581,\nblocks: [\n  os_search_db-site-search: [\n    region: \"sidebar_first\"\n  ]\n]",
+        "type": "js"
+      }
+    ],
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_layout/1.0/OsRestfulLayout.class.php",
+    "groupTitle": "Layout"
+  },
+  {
+    "type": "post",
+    "url": "api/layout",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Layout",
+    "description": "<p>Create a layout in a vsite.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>vsite ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>Identifier of the layout object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Array</p> ",
+            "optional": false,
+            "field": "blocks",
+            "description": "<p>Array of blocks.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "blocks.module",
+            "description": "<p>The name of the module which provide the block.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "blocks.delta",
+            "description": "<p>The delta of the box.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "blocks.region",
+            "description": "<p>The region In the body.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "blocks.weight",
+            "description": "<p>The weight of the module. Will affect the order of the blocks in the same region.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Boolean</p> ",
+            "optional": false,
+            "field": "blocks.status",
+            "description": "<p>Determine if the block will be display or not.</p> "
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": "vsite: 2,\nobject_id: os_pages-page-581,\nboxes: [\n  boxes-1419335380: [\n    module: \"boxes\",\n    delta: \"1419335380\",\n    region: \"sidebar_second\",\n    weight: 2,\n    status: 0\n  ]\n]",
+        "type": "js"
+      }
+    ],
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_layout/1.0/OsRestfulLayout.class.php",
+    "groupTitle": "Layout"
+  },
+  {
+    "type": "delete",
     "url": "api/link/:id",
     "title": "Delete",
     "version": "0.1.0",
@@ -1362,6 +1906,135 @@
     },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/news/1.0/NewsNodeRestfulBase.class.php",
     "groupTitle": "News"
+  },
+  {
+    "type": "delete",
+    "url": "api/og_vocab/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Og_Vocabulary",
+    "description": "<p>Delete an og vocabulary.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The og vocabulary ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/og_vocab/1.0/OsOgVocab.class.php",
+    "groupTitle": "Og_Vocabulary"
+  },
+  {
+    "type": "get",
+    "url": "api/og_vocab/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Og_Vocabulary",
+    "description": "<p>Consume og vocabulary content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The ID of the entity</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/og_vocab/1.0/OsOgVocab.class.php",
+    "groupTitle": "Og_Vocabulary",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/og_vocab/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/og_vocab/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Og_Vocabulary",
+    "description": "<p>Patch an og vocabulary.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The entity type</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "bundle",
+            "description": "<p>The entity bundle</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The og vocabulary ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/og_vocab/1.0/OsOgVocab.class.php",
+    "groupTitle": "Og_Vocabulary"
+  },
+  {
+    "type": "post",
+    "url": "api/og_vocab",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Og_Vocabulary",
+    "description": "<p>Create an og vocabulary.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The entity type</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "bundle",
+            "description": "<p>The entity bundle</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The entity ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/og_vocab/1.0/OsOgVocab.class.php",
+    "groupTitle": "Og_Vocabulary"
   },
   {
     "type": "delete",
@@ -1940,6 +2613,63 @@
     "groupTitle": "Publication"
   },
   {
+    "type": "get",
+    "url": "api/roles?vsite=:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Roles",
+    "description": "<p>Consume user roles inside the group.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "rid",
+            "description": "<p>Role's ID.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>Role's name.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "gid",
+            "description": "<p>Group ID. Not in use.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "group_bundle",
+            "description": "<p>Group type.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "group_type",
+            "description": "<p>Group Entity.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/roles/1.0/OsRestfulRoles.class.php",
+    "groupTitle": "Roles",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/roles?vsite=:id"
+      }
+    ]
+  },
+  {
     "type": "delete",
     "url": "api/slideshow_slide/:id",
     "title": "Delete",
@@ -2244,89 +2974,265 @@
   },
   {
     "type": "delete",
-    "url": "api/book/:id",
+    "url": "api/taxonomy/:id",
     "title": "Delete",
     "version": "0.1.0",
     "name": "Delete",
-    "group": "book",
-    "description": "<p>Create a book entry.</p> ",
+    "group": "Term",
+    "description": "<p>Delete a taxonomy term.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "<p>Number</p> ",
+            "type": "<p>Integer</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The book ID</p> "
+            "description": "<p>The term ID</p> "
           }
         ]
       }
     },
-    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
-    "groupTitle": "book"
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/taxonomy/1.0/OsTaxonomyTerm.class.php",
+    "groupTitle": "Term"
   },
   {
     "type": "get",
-    "url": "api/book/:id",
+    "url": "api/taxonomy?vsite=:id",
     "title": "Get",
     "version": "0.1.0",
     "name": "Get",
-    "group": "book",
-    "description": "<p>Consume book content.</p> ",
+    "group": "Term",
+    "description": "<p>Consume taxonomy term content.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "<p>Number</p> ",
+            "type": "<p>Integer</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The book ID</p> "
+            "description": "<p>The ID of the VSite</p> "
           }
         ]
       }
     },
-    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
-    "groupTitle": "book",
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/taxonomy/1.0/OsTaxonomyTerm.class.php",
+    "groupTitle": "Term",
     "sampleRequest": [
       {
-        "url": "http://localhost/OpenScholarMake/www/api/book/:id"
+        "url": "http://localhost/OpenScholarMake/www/api/taxonomy?vsite=:id"
       }
     ]
   },
   {
     "type": "patch",
-    "url": "api/book/:id",
+    "url": "api/taxonomy/:id",
     "title": "Patch",
     "version": "0.1.0",
     "name": "Patch",
-    "group": "book",
-    "description": "<p>Create a book entry.</p> ",
+    "group": "Term",
+    "description": "<p>Patch a taxonomy term.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "<p>Number</p> ",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>The name of the term</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The book ID</p> "
+            "description": "<p>The term ID</p> "
           }
         ]
       }
     },
-    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
-    "groupTitle": "book"
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/taxonomy/1.0/OsTaxonomyTerm.class.php",
+    "groupTitle": "Term"
   },
   {
     "type": "post",
-    "url": "api/book",
+    "url": "api/taxonomy",
     "title": "Post",
     "version": "0.1.0",
     "name": "Post",
-    "group": "book",
-    "description": "<p>Create a book entry.</p> ",
+    "group": "Term",
+    "description": "<p>Create taxonomy term content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>The name of the term</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vocabulary",
+            "description": "<p>The name of the vocabulary for the term</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/taxonomy/1.0/OsTaxonomyTerm.class.php",
+    "groupTitle": "Term",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/taxonomy"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "api/users/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "User",
+    "description": "<p>Consume the user entity.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The ID of the user</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/user/1.0/OsRestfulUser.class.php",
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/users/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/users/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "User",
+    "description": "<p>Patch a user entity.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>The name of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "mail",
+            "description": "<p>The email of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>The password for the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "role",
+            "description": "<p>The role ID of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The VSite of the user</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/user/1.0/OsRestfulUser.class.php",
+    "groupTitle": "User"
+  },
+  {
+    "type": "post",
+    "url": "api/users",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "User",
+    "description": "<p>Create a user entity.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "name",
+            "description": "<p>The name of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "mail",
+            "description": "<p>The email of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "password",
+            "description": "<p>The password for the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "role",
+            "description": "<p>The role ID of the user</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The VSite of the user</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/user/1.0/OsRestfulUser.class.php",
+    "groupTitle": "User"
+  },
+  {
+    "type": "delete",
+    "url": "api/variables",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Variables",
+    "description": "<p>Delete a variable in a vsite.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2335,12 +3241,311 @@
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The book ID</p> "
+            "description": "<p>The publication ID</p> "
           }
         ]
       }
     },
-    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/book/1.0/BookNodeRestfulBase.class.php",
-    "groupTitle": "book"
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The variable name.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_variables/1.0/OsRestfulVariables.class.php",
+    "groupTitle": "Variables"
+  },
+  {
+    "type": "get",
+    "url": "api/variables/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Variables",
+    "description": "<p>Get a variable from a vsite.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The space override type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The space override ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Mixed</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The space override object ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Mixed</p> ",
+            "optional": false,
+            "field": "object_type",
+            "description": "<p>The space override object type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Mixed</p> ",
+            "optional": false,
+            "field": "value",
+            "description": "<p>The space override value.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_variables/1.0/OsRestfulVariables.class.php",
+    "groupTitle": "Variables",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/variables/:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/variables",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Variables",
+    "description": "<p>Update a variable in a vsite.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The variable name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Mixed</p> ",
+            "optional": false,
+            "field": "value",
+            "description": "<p>The body of the publication.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_variables/1.0/OsRestfulVariables.class.php",
+    "groupTitle": "Variables"
+  },
+  {
+    "type": "post",
+    "url": "api/variables",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Variables",
+    "description": "<p>Create a variable in a vsite.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The variable name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Mixed</p> ",
+            "optional": false,
+            "field": "value",
+            "description": "<p>The body of the publication.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_variables/1.0/OsRestfulVariables.class.php",
+    "groupTitle": "Variables"
+  },
+  {
+    "type": "delete",
+    "url": "api/vocabulary/:id",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Vocabulary",
+    "description": "<p>Delete a vocabulary.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The vocabulary ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vocabulary/1.0/OsVocabulary.class.php",
+    "groupTitle": "Vocabulary"
+  },
+  {
+    "type": "get",
+    "url": "api/vocabulary?vsite=:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Vocabulary",
+    "description": "<p>Consume vocabulary content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The ID of the VSite</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vocabulary/1.0/OsVocabulary.class.php",
+    "groupTitle": "Vocabulary",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/vocabulary?vsite=:id"
+      }
+    ]
+  },
+  {
+    "type": "patch",
+    "url": "api/vocabulary/:id",
+    "title": "Patch",
+    "version": "0.1.0",
+    "name": "Patch",
+    "group": "Vocabulary",
+    "description": "<p>Patch a vocabulary.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>The name of the vocabulary</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The vocabulary ID</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vocabulary/1.0/OsVocabulary.class.php",
+    "groupTitle": "Vocabulary"
+  },
+  {
+    "type": "post",
+    "url": "api/vocabulary",
+    "title": "Post",
+    "version": "0.1.0",
+    "name": "Post",
+    "group": "Vocabulary",
+    "description": "<p>Create vocabulary content.</p> ",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>The name of the vocabulary</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The ID of the VSite</p> "
+          }
+        ]
+      }
+    },
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vocabulary/1.0/OsVocabulary.class.php",
+    "groupTitle": "Vocabulary",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/vocabulary"
+      }
+    ]
   }
 ]
