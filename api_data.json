@@ -6,7 +6,7 @@
     "version": "0.1.0",
     "name": "Access_token",
     "group": "Basic",
-    "description": "<p>Access token uses us for request which done outside the Drupal installation. A good example will be a mobile application try to access content which not accessible to anonymous users. Since the request is done outside the Drupal installation we need a way to verify which user involve in the request.</p> <p>In the example you can see how a request to get the access token is done using Angular JS. Once the request succeeded you will get back a JSON with three important parameters:</p> <ul> <li><code>access_token</code> will keep the access token that you can use in order to make a successful rest request.</li> <li><code>expires_in</code> define for how many times the access token is valid. Usually for one day.</li> <li><code>refresh_token</code> will used you to get a new access token once the previous has expired.</li> </ul> ",
+    "description": "<p>Access token uses us for request which done outside the Drupal installation. A good example will be a mobile application try to access content which not accessible to anonymous users. Since the request is done outside the Drupal installation we need a way to verify which user involve in the request.</p> <p>The example below will show you how you can generate access token for a user. Once the request succeeded you will get back a JSON with three important parameters:</p> <ul> <li><code>access_token</code> -  This is the token which represent the user in any rest request.</li> <li><code>expires_in</code> - Amount of seconds in which the access token is valid.</li> <li><code>refresh_token</code> - Once the the amount of seconds reached to maximum the refresh token isn't not valid any more. You'll need to ask for a new one using the refresh token.</li> </ul> ",
     "examples": [
       {
         "title": "Example usage:",
@@ -51,7 +51,7 @@
     "version": "0.1.0",
     "name": "Basic",
     "group": "Basic",
-    "description": "<p>When running a REST request inside a Drupal installation RESTful will validate you need to pass an X-CSRF-TOKEN as a header for each request. This will make sure that the user of the cookie was not hijacked.</p> ",
+    "description": "<p>Unlike the access token situation, when running a REST request inside a Drupal installation RESTful will validate the available cookies. You'll need to pass X-CSRF-TOKEN header for each request. This will make sure that the user's cookie was not hijacked.</p> ",
     "success": {
       "examples": [
         {
@@ -71,7 +71,7 @@
     "version": "0.1.0",
     "name": "End_points",
     "group": "Basic",
-    "description": "<p>One of RESTful good features is the API discovery.</p> ",
+    "description": "<p>One of RESTful good features is the API discovery. This end point will provide for you all the available end points and their description. Very handy during development.</p> ",
     "sampleRequest": [
       {
         "url": "http://localhost/OpenScholarMake/www/api/"
@@ -87,7 +87,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Biography",
-    "description": "<p>Create a Biography entry.</p> ",
+    "description": "<p>Delete a biography entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -96,7 +96,7 @@
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The publication ID</p> "
+            "description": "<p>The biography ID</p> "
           }
         ]
       }
@@ -111,7 +111,7 @@
     "version": "0.1.0",
     "name": "Get",
     "group": "Biography",
-    "description": "<p>Consume publications content.</p> ",
+    "description": "<p>Consume biography content.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -120,7 +120,7 @@
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The publication ID</p> "
+            "description": "<p>The biography ID</p> "
           }
         ]
       }
@@ -230,7 +230,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Biography",
-    "description": "<p>Create a Biography entry.</p> ",
+    "description": "<p>Update a biography entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -239,7 +239,7 @@
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The publication ID</p> "
+            "description": "<p>The biography ID</p> "
           }
         ]
       }
@@ -295,7 +295,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Biography",
-    "description": "<p>Create a Biography entry.</p> ",
+    "description": "<p>Create a biography entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -304,7 +304,7 @@
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The publication ID</p> "
+            "description": "<p>The biography ID</p> "
           }
         ]
       }
@@ -360,7 +360,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Blog",
-    "description": "<p>Create a Blog entry.</p> ",
+    "description": "<p>Delete a blog entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -413,7 +413,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Blog",
-    "description": "<p>Create a Blog entry.</p> ",
+    "description": "<p>Update a blog entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -437,7 +437,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Blog",
-    "description": "<p>Create a Blog entry.</p> ",
+    "description": "<p>Create a blog entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -514,7 +514,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Book",
-    "description": "<p>Patch a book entry.</p> ",
+    "description": "<p>Update a book entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -562,7 +562,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "CV",
-    "description": "<p>Create a cv entry.</p> ",
+    "description": "<p>Delete a cv entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -615,7 +615,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "CV",
-    "description": "<p>Create a cv entry.</p> ",
+    "description": "<p>Update a cv entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -663,7 +663,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Class",
-    "description": "<p>Create a class entry.</p> ",
+    "description": "<p>Delete a class entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -716,7 +716,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Class",
-    "description": "<p>Create a class entry.</p> ",
+    "description": "<p>Update a class entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -764,7 +764,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Class_material",
-    "description": "<p>Create a class entry.</p> ",
+    "description": "<p>Delete a class entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -817,7 +817,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Class_material",
-    "description": "<p>Create a class material entry.</p> ",
+    "description": "<p>Update a class material entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -865,7 +865,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Event",
-    "description": "<p>Create a event entry.</p> ",
+    "description": "<p>Delete a event entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -918,7 +918,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Event",
-    "description": "<p>Create a event entry.</p> ",
+    "description": "<p>Update a event entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -966,7 +966,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "FAQ",
-    "description": "<p>Create a faq entry.</p> ",
+    "description": "<p>Delete a faq entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1019,7 +1019,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "FAQ",
-    "description": "<p>Create a faq entry.</p> ",
+    "description": "<p>Update a faq entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1067,7 +1067,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Feed",
-    "description": "<p>Create a feed entry.</p> ",
+    "description": "<p>Delete a feed entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1120,7 +1120,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Feed",
-    "description": "<p>Create a feed entry.</p> ",
+    "description": "<p>Update a feed entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1297,7 +1297,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Files",
-    "description": "<p>Create a Biography entry.</p> ",
+    "description": "<p>Update a file entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1396,7 +1396,7 @@
     "version": "0.1.0",
     "name": "Group",
     "group": "Group",
-    "description": "<p>OpenScholar uses Organic Groups in order to have content attached to vsite. Actually, each vsite is a group. This give us the options to override site wide settings(roles and permission).</p> <p>There are 3 types of groups: personal, project and department when personal can have sub-sites.</p> ",
+    "description": "<p>OpenScholar uses <a href=\"http://drupal.org/project/og\">Organic Groups</a> in order to have content attached to vsite. Actually, each vsite is a group. This give us the options to override site wide settings(roles and permission).</p> <p>There are 3 types of groups: personal, project and department when personal can have sub-sites.</p> ",
     "sampleRequest": [
       {
         "url": "http://localhost/OpenScholarMake/www/api/group"
@@ -1467,13 +1467,74 @@
     "groupTitle": "Group"
   },
   {
+    "type": "delete",
+    "url": "api/layouts",
+    "title": "Delete",
+    "version": "0.1.0",
+    "name": "Delete",
+    "group": "Layout",
+    "description": "<p>Delete a box from a layout.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>vsite ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>Identifier of the layout object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "delta",
+            "description": "<p>The delta of the block.</p> "
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "title": "Example usage:",
+        "content": " {\n   vsite: 2,\n   object_id: os_pages-page-582:reaction:block,\n   delta: boxes-1419335380\n}",
+        "type": "js"
+      }
+    ],
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_layout/1.0/OsRestfulLayout.class.php",
+    "groupTitle": "Layout"
+  },
+  {
+    "type": "get",
+    "url": "api/layouts/:id",
+    "title": "Get",
+    "version": "0.1.0",
+    "name": "Get",
+    "group": "Layout",
+    "description": "<p>Get a layout structure from a vsite.</p> ",
+    "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_layout/1.0/OsRestfulLayout.class.php",
+    "groupTitle": "Layout",
+    "sampleRequest": [
+      {
+        "url": "http://localhost/OpenScholarMake/www/api/layouts/:id"
+      }
+    ]
+  },
+  {
     "type": "patch",
-    "url": "api/layout",
+    "url": "api/layouts",
     "title": "Patch",
     "version": "0.1.0",
     "name": "Patch",
     "group": "Layout",
-    "description": "<p>Update a layout in a vsite.</p> ",
+    "description": "<p>Update a layout structure in a vsite.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1526,7 +1587,7 @@
   },
   {
     "type": "post",
-    "url": "api/layout",
+    "url": "api/layouts",
     "title": "Post",
     "version": "0.1.0",
     "name": "Post",
@@ -1611,7 +1672,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Link",
-    "description": "<p>Create a Link entry.</p> ",
+    "description": "<p>Delete a link entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1664,7 +1725,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Link",
-    "description": "<p>Create a Link entry.</p> ",
+    "description": "<p>Update a Link entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1688,7 +1749,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Link",
-    "description": "<p>Create a Link entry.</p> ",
+    "description": "<p>Update a link entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1712,7 +1773,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Media_gallery",
-    "description": "<p>Create a Media gallery entry.</p> ",
+    "description": "<p>Delete a media gallery entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1736,7 +1797,7 @@
     "version": "0.1.0",
     "name": "Get",
     "group": "Media_gallery",
-    "description": "<p>Consume media_gallery content.</p> ",
+    "description": "<p>Consume media gallery content.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1765,7 +1826,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Media_gallery",
-    "description": "<p>Create a Media gallery entry.</p> ",
+    "description": "<p>Update a media gallery entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1789,7 +1850,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Media_gallery",
-    "description": "<p>Create a Media gallery entry.</p> ",
+    "description": "<p>Create a media gallery entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1813,7 +1874,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "News",
-    "description": "<p>Create a News entry.</p> ",
+    "description": "<p>Delete a news entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1866,7 +1927,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "News",
-    "description": "<p>Create a News entry.</p> ",
+    "description": "<p>Update a news entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1890,7 +1951,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "News",
-    "description": "<p>Create a News entry.</p> ",
+    "description": "<p>Create a news entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1967,26 +2028,26 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Og_Vocabulary",
-    "description": "<p>Patch an og vocabulary.</p> ",
-    "parameter": {
+    "description": "<p>Update an og vocabulary.</p> ",
+    "success": {
       "fields": {
-        "Parameter": [
+        "Success 200": [
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "type",
             "description": "<p>The entity type</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "bundle",
             "description": "<p>The entity bundle</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Integer</p> ",
             "optional": false,
             "field": "id",
@@ -2043,7 +2104,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Page",
-    "description": "<p>Create a Page entry.</p> ",
+    "description": "<p>Delete a Page entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2096,7 +2157,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Page",
-    "description": "<p>Create a Page entry.</p> ",
+    "description": "<p>Update a Page entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2144,7 +2205,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Person",
-    "description": "<p>Create a person entry.</p> ",
+    "description": "<p>Delete a person entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2197,7 +2258,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Person",
-    "description": "<p>Create a person entry.</p> ",
+    "description": "<p>Update a person entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2245,7 +2306,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Presentation",
-    "description": "<p>Create a Presentation entry.</p> ",
+    "description": "<p>Delete a Presentation entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2298,7 +2359,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Presentation",
-    "description": "<p>Create a Presentation entry.</p> ",
+    "description": "<p>Update a Presentation entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2322,7 +2383,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Presentation",
-    "description": "<p>Create a Presentation entry.</p> ",
+    "description": "<p>Update a Presentation entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2346,7 +2407,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Publication",
-    "description": "<p>Create a Publication entry.</p> ",
+    "description": "<p>Delete a Publication entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2489,7 +2550,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Publication",
-    "description": "<p>Create a Publication entry.</p> ",
+    "description": "<p>Update a Publication entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2620,39 +2681,39 @@
     "name": "Get",
     "group": "Roles",
     "description": "<p>Consume user roles inside the group.</p> ",
-    "parameter": {
+    "success": {
       "fields": {
-        "Parameter": [
+        "Success 200": [
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Integer</p> ",
             "optional": false,
             "field": "rid",
             "description": "<p>Role's ID.</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "name",
             "description": "<p>Role's name.</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>Integer</p> ",
             "optional": false,
             "field": "gid",
             "description": "<p>Group ID. Not in use.</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "group_bundle",
             "description": "<p>Group type.</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "group_type",
@@ -2676,7 +2737,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Slideshow",
-    "description": "<p>Create a Slideshow entry.</p> ",
+    "description": "<p>Delete a Slideshow entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2729,7 +2790,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Slideshow",
-    "description": "<p>Create a Slideshow entry.</p> ",
+    "description": "<p>Update a Slideshow entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2777,7 +2838,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Software_project",
-    "description": "<p>Create a Software project entry.</p> ",
+    "description": "<p>Delete a software project entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2830,7 +2891,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Software_project",
-    "description": "<p>Create a Software project entry.</p> ",
+    "description": "<p>Update a software project entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2854,7 +2915,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Software_project",
-    "description": "<p>Create a Software project entry.</p> ",
+    "description": "<p>Create a software project entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2878,7 +2939,7 @@
     "version": "0.1.0",
     "name": "Delete",
     "group": "Software_release",
-    "description": "<p>Create a Software release entry.</p> ",
+    "description": "<p>Delete a software release entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2931,7 +2992,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Software_release",
-    "description": "<p>Create a Software release entry.</p> ",
+    "description": "<p>Update a software release entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -2955,7 +3016,7 @@
     "version": "0.1.0",
     "name": "Post",
     "group": "Software_release",
-    "description": "<p>Create a Software release entry.</p> ",
+    "description": "<p>Create a software release entry.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -3032,7 +3093,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Term",
-    "description": "<p>Patch a taxonomy term.</p> ",
+    "description": "<p>Update a taxonomy term.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -3064,18 +3125,18 @@
     "name": "Post",
     "group": "Term",
     "description": "<p>Create taxonomy term content.</p> ",
-    "parameter": {
+    "success": {
       "fields": {
-        "Parameter": [
+        "Success 200": [
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "label",
             "description": "<p>The name of the term</p> "
           },
           {
-            "group": "Parameter",
+            "group": "Success 200",
             "type": "<p>String</p> ",
             "optional": false,
             "field": "vocabulary",
@@ -3128,7 +3189,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "User",
-    "description": "<p>Patch a user entity.</p> ",
+    "description": "<p>Update a user entity.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -3488,7 +3549,7 @@
     "version": "0.1.0",
     "name": "Patch",
     "group": "Vocabulary",
-    "description": "<p>Patch a vocabulary.</p> ",
+    "description": "<p>Update a vocabulary.</p> ",
     "parameter": {
       "fields": {
         "Parameter": [
