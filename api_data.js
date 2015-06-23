@@ -451,6 +451,96 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/blog/1.0/BlogNodeRestfulBase.class.php",
     "groupTitle": "Blog"
   },
@@ -495,6 +585,96 @@ define({ "api": [
             "optional": false,
             "field": "id",
             "description": "<p>The book ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
           }
         ]
       }
@@ -600,6 +780,96 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/cv/1.0/CVNodeRestfulBase.class.php",
     "groupTitle": "CV",
     "sampleRequest": [
@@ -697,6 +967,96 @@ define({ "api": [
             "optional": false,
             "field": "id",
             "description": "<p>The class ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
           }
         ]
       }
@@ -802,6 +1162,103 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object</p> ",
+            "optional": false,
+            "field": "parent",
+            "description": "<p>The class which the current object belong to.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/class_material/1.0/ClassMaterialNodeRestfulBase.class.php",
     "groupTitle": "Class_material",
     "sampleRequest": [
@@ -890,6 +1347,117 @@ define({ "api": [
     "name": "Get",
     "group": "Event",
     "description": "<p>Consume event content.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "start_date",
+            "description": "<p>Event start date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "end_date",
+            "description": "<p>Event end date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "field_event_registration",
+            "description": "<p>The event type. Use event_signup_simple. Populate with [registration_type: event_signup_simple]</p> "
+          }
+        ]
+      }
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -1004,6 +1572,96 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/faq/1.0/FAQNodeRestfulBase.class.php",
     "groupTitle": "FAQ",
     "sampleRequest": [
@@ -1101,6 +1759,96 @@ define({ "api": [
             "optional": false,
             "field": "id",
             "description": "<p>The feed ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
           }
         ]
       }
@@ -1415,6 +2163,68 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "users",
+            "description": "<p>The group users.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "users.id",
+            "description": "<p>The user ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "users.name",
+            "description": "<p>The user name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "preset",
+            "description": "<p>The group preset.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "purl",
+            "description": "<p>The group persistent URL.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The group type(i.e node type).</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/group/1.0/GroupNodeRestfulBase.class.php",
     "groupTitle": "Group"
   },
@@ -1519,6 +2329,47 @@ define({ "api": [
     "name": "Get",
     "group": "Layout",
     "description": "<p>Get a layout structure from a vsite.</p> ",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "type",
+            "description": "<p>The override type. Default is OG.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_id",
+            "description": "<p>The override identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "object_type",
+            "description": "<p>The object type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "value",
+            "description": "<p>Teh override definitions.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/vsite_layout/1.0/OsRestfulLayout.class.php",
     "groupTitle": "Layout",
     "sampleRequest": [
@@ -1710,6 +2561,96 @@ define({ "api": [
         ]
       }
     },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          }
+        ]
+      }
+    },
     "filename": "../OpenScholarMake/openscholar/modules/os/modules/os_restful/plugins/restful/node/link/1.0/LinkNodeRestfulBase.class.php",
     "groupTitle": "Link",
     "sampleRequest": [
@@ -1806,7 +2747,111 @@ define({ "api": [
             "type": "<p>Number</p> ",
             "optional": false,
             "field": "id",
-            "description": "<p>The media gallery ID</p> "
+            "description": "<p>The media gallery ID.</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "rows",
+            "description": "<p>Number of rows for the images.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "columns",
+            "description": "<p>Number of columns for the images.</p> "
           }
         ]
       }
@@ -1908,6 +2953,110 @@ define({ "api": [
             "optional": false,
             "field": "id",
             "description": "<p>The news ID</p> "
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "<p>Number</p> ",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The publication ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "label",
+            "description": "<p>Registration Date.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "vsite",
+            "description": "<p>The vsite object.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "vsite.title",
+            "description": "<p>Group name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "vsite.id",
+            "description": "<p>Group ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>string</p> ",
+            "optional": false,
+            "field": "body",
+            "description": "<p>The body of the publication.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Object[]</p> ",
+            "optional": false,
+            "field": "files",
+            "description": "<p>The attached files.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.fid",
+            "description": "<p>file ID.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.filemime",
+            "description": "<p>Mime type.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.name",
+            "description": "<p>File name.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.uri",
+            "description": "<p>Uniform Resource Identifier.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>Integer</p> ",
+            "optional": false,
+            "field": "files.url",
+            "description": "<p>The address url.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "date",
+            "description": "<p>The date which the news created.</p> "
+          },
+          {
+            "group": "Success 200",
+            "type": "<p>String</p> ",
+            "optional": false,
+            "field": "photo",
+            "description": "<p>The date which the news created.</p> "
           }
         ]
       }
